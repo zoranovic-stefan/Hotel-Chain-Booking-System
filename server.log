@@ -1,0 +1,44 @@
+2025-03-20 23:37:36,910 INFO: b"* Serving Flask app 'app'"
+2025-03-20 23:37:36,910 INFO: b'* Debug mode: on'
+2025-03-20 23:37:37,083 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 23:37:37,084 INFO: [33mPress CTRL+C to quit[0m
+2025-03-20 23:37:37,091 INFO:  * Restarting with stat
+2025-03-20 23:37:37,625 WARNING:  * Debugger is active!
+2025-03-20 23:37:37,633 INFO:  * Debugger PIN: 888-929-937
+2025-03-20 23:37:46,006 INFO: 127.0.0.1 - - [20/Mar/2025 23:37:46] "[31m[1mGET /api/rooms/available?destination=ottawa&capacity=2&check_in=2025-03-22&check_out=2025-03-25 HTTP/1.1[0m" 415 -
+2025-03-20 23:38:40,639 INFO:  * Detected change in 'c:\\Users\\josue\\CSI2132-Hotel-Project\\src\\controllers\\rooms.py', reloading
+2025-03-20 23:38:40,728 INFO:  * Restarting with stat
+2025-03-20 23:38:41,432 WARNING:  * Debugger is active!
+2025-03-20 23:38:41,440 INFO:  * Debugger PIN: 888-929-937
+2025-03-20 23:38:48,977 INFO: b"* Serving Flask app 'app'"
+2025-03-20 23:38:48,977 INFO: b'* Debug mode: on'
+2025-03-20 23:38:48,996 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 23:38:48,996 INFO: [33mPress CTRL+C to quit[0m
+2025-03-20 23:38:48,997 INFO:  * Restarting with stat
+2025-03-20 23:38:49,536 WARNING:  * Debugger is active!
+2025-03-20 23:38:49,547 INFO:  * Debugger PIN: 888-929-937
+2025-03-20 23:38:55,214 INFO: 127.0.0.1 - - [20/Mar/2025 23:38:55] "[31m[1mGET /api/rooms/available?destination=ottawa&capacity=2&check_in=2025-03-22&check_out=2025-03-25 HTTP/1.1[0m" 415 -
+2025-03-20 23:39:26,382 INFO:  * Detected change in 'c:\\Users\\josue\\CSI2132-Hotel-Project\\src\\controllers\\rooms.py', reloading
+2025-03-20 23:39:26,507 INFO:  * Restarting with stat
+2025-03-20 23:39:27,207 WARNING:  * Debugger is active!
+2025-03-20 23:39:27,216 INFO:  * Debugger PIN: 888-929-937
+2025-03-20 23:43:27,271 INFO:  * Detected change in 'c:\\Users\\josue\\CSI2132-Hotel-Project\\src\\controllers\\rooms.py', reloading
+2025-03-20 23:43:27,369 INFO:  * Restarting with stat
+2025-03-20 23:43:28,080 WARNING:  * Debugger is active!
+2025-03-20 23:43:28,088 INFO:  * Debugger PIN: 888-929-937
+2025-03-20 23:45:05,126 INFO: b"* Serving Flask app 'app'"
+2025-03-20 23:45:05,126 INFO: b'* Debug mode: on'
+2025-03-20 23:45:05,146 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 23:45:05,147 INFO: [33mPress CTRL+C to quit[0m
+2025-03-20 23:45:05,148 INFO:  * Restarting with stat
+2025-03-20 23:45:05,660 WARNING:  * Debugger is active!
+2025-03-20 23:45:05,667 INFO:  * Debugger PIN: 888-929-937
+2025-03-20 23:45:12,835 INFO: 127.0.0.1 - - [20/Mar/2025 23:45:12] "[31m[1mGET /api/rooms/available?destination=ottawa&capacity=2&check_in=2025-03-22&check_out=2025-03-25 HTTP/1.1[0m" 415 -
+2025-03-20 23:46:07,609 INFO:  * Detected change in 'c:\\Users\\josue\\CSI2132-Hotel-Project\\app.py', reloading
+2025-03-20 23:46:07,728 INFO:  * Restarting with stat
+2025-03-20 23:46:25,391 INFO:  * Restarting with stat
+2025-03-20 23:46:46,026 INFO:  * Restarting with stat
+2025-03-20 23:48:23,382 INFO:  * Restarting with stat

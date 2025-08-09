@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Log in{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+  <br />
+  <h3>Log in Existing Employee</h3>
+  <div class="form-group">
+    <label for="content">Employee ID/Email</label>
+    <input
+      type="text"
+      class="form-control"
+      id="content"
+      name="content"
+      placeholder="Enter You Employee ID/Email"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      placeholder="Enter Password"
+    />
+  </div>
+
+  <br />
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+{% endblock %}

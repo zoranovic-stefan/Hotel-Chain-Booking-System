@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Available Rooms{% endblock %}
+
+{% block content %}
+  <h2>Available Rooms</h2>
+  {% if rooms %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Hotel</th>
+          <th>Rating</th>
+          <th>Room Number</th>
+          <th>Capacity</th>
+          <th>View</th>
+          <th>Room Amenities</th>
+          <th>Extendable?</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for room in rooms %}
+        <tr>
+          <td>{{ room.hotel_name }}</td>
+          <td>{{ room.star_rating }}</td>
+          <td>{{ room.room_number }}</td>
+          <td>{{ room.capacity }}</td>
+          <td>{{ room.view_types }}</td>
+          <td>{{ room.amenities }}</td>
+          <td>{{ 'Yes' if room.is_extendable else 'No' }}</td>
+          <td>${{ room.price }}</td>
+
+          <td>
+            <form action="{{ url_for('checkout') }}" method="POST">
+              <input type="hidden" name="room_id" value="{{ room_id }}">
+              <button type="submit" class="btn btn-success btn-sm">Book</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No rooms available at the moment.</p>
+  {% endif %}
+{% endblock %}

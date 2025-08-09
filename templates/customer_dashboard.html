@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% block title %}Select Room Preference{% endblock %}
+
+{% block content %}
+  <h2>Available Rooms</h2>
+
+  <form method="GET" action="/customer_dashboard">
+    <div class="form-row">
+      <fieldset>
+        <legend>Select Hotel Chain</legend>
+      
+        <div>
+          <input type="checkbox" id="name" value="1" name="name"/>
+          <label for="name">Marriott</label>
+        </div>
+      
+        <div>
+          <input type="checkbox" id="name" value="2" name="name" />
+          <label for="name">Hilton</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="name" value="3" name="name" />
+          <label for="name">Best Western</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="name" value="4" name="name" />
+          <label for="name">IHG</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="name" value="5" name="name" />
+          <label for="name">Radisson</label>
+        </div>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Destination</legend>
+      
+        <div>
+          <input type="checkbox" id="city" value="Montreal" name="city"/>
+          <label for="city">Montreal</label>
+        </div>
+      
+        <div>
+          <input type="checkbox" id="city" value="Toronto" name="city" />
+          <label for="city">Toronto</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="city" value="Ottawa" name="city" />
+          <label for="city">Ottawa</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="city" value="Calgary" name="city" />
+          <label for="city">Calgary</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="city" value="Vancouver" name="city" />
+          <label for="city">Vancouver</label>
+        </div>
+      </fieldset>
+
+      <br />
+
+      <div class="col">
+        <label for="price">Rating</label>
+        <select name="star_rating" class="form-control">
+          <option disabled selected hidden>Star Count</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div class="col">
+        <label for="price">Maximum Price</label>
+        <select name="price" id="price" class="form-control">
+          <option disabled selected hidden>Maximum Price</option>
+          {% for price in range(100, 501, 25) %}
+            <option value="{{ price }}">${{ price }}</option>
+          {% endfor %}
+        </select>
+      </div>      
+
+      <br />
+
+      <fieldset>
+        <legend>Preferred Views</legend>
+      
+        <div>
+          <input type="checkbox" id="view_types" value="Lake view" name="view_types" checked/>
+          <label for="view_types">Lake view</label>
+        </div>
+      
+        <div>
+          <input type="checkbox" id="view_types" value="Sea view" name="view_types" checked/>
+          <label for="view_types">Sea view</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="view_types" value="Parliament view" name="view_types" checked/>
+          <label for="view_types">Parliament view</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="view_types" value="Mountain view" name="view_types" checked/>
+          <label for="view_types">Mountain view</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="view_types" value="Pent House view" name="view_types" checked/>
+          <label for="view_types">Pent House view</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="view_types" value="River view" name="view_types" checked/>
+          <label for="view_types">River view</label>
+        </div>
+      </fieldset>
+
+      <br />
+
+      <div class="col">
+        <select name="capacity" class="form-control">
+          <option value="">Any Capacity</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5+</option>
+        </select>
+      </div>
+
+      <br />
+
+      <button type="submit" class="btn btn-primary">Filter</button>
+    </div>
+  </form>
+
+  {% endblock %}

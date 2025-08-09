@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+  <br />
+  <h3>Create New Customer</h3>
+  <div class="form-group">
+    <label for="full_name">Full Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="full_name"
+      name="full_name"
+      placeholder="Enter Full Name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input
+      type="address"
+      class="form-control"
+      id="address"
+      name="address"
+      placeholder="Enter Address"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="content">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="content"
+      name="content"
+      placeholder="Enter Email Address"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="driver_license">Drivers License</label>
+    <input
+      type="text"
+      class="form-control"
+      id="driver_license"
+      name="driver_license"
+      placeholder="Enter Driver License Number"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="driver_license_confirm">Confirm Drivers License</label>
+    <input
+      type="text"
+      class="form-control"
+      id="driver_license_confirm"
+      name="driver_license_confirm"
+      placeholder="Confirm Your Drivers License Number"
+    />
+  </div>
+
+  <br />
+
+  <button type="submit" class="btn btn-success" name="action" value="signup">Create Account</button>
+
+  <h3>Returning Customer</h3>
+  <div class="form-group">
+    <label for="content_submit">Email Address</label>
+    <input
+      type="text"
+      class="form-control"
+      id="content_submit"
+      name="content_submit"
+      placeholder="Enter Email Address"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="driver_license_submit">Drivers License</label>
+    <input
+      type="text"
+      class="form-control"
+      id="driver_license_submit"
+      name="driver_license_submit"
+      placeholder="Enter Driver License Number"
+    />
+  </div>
+
+  <br />
+
+  <button type="submit" class="btn btn-primary" name="action" value="login">Login</button>
+
+</form>
+
+{% endblock %}
